@@ -17,7 +17,7 @@ st.sidebar.markdown("This application is a Streamlit dashboard used "
 
 @st.cache(persist=True)
 def load_data():
-    data = pd.read_csv("Documents/ML/python_scripts/Tweets.csv")
+    data = pd.read_csv("Tweets.csv")
     data['tweet_created'] = pd.to_datetime(data['tweet_created'])
     return data
 
